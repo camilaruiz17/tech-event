@@ -23,12 +23,12 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Crime::factory()->create([
-           'alertName' => 'Thanos ataca Madrid',
-           'description' => 'Thanos va a atacar Madrid con su guante de mielda',
-           'heroesRequired' => 10,
-           'img' => 'https://www.royalcanin.com/es/dogs/breeds/breed-library/billy',
-           'datetime'=> '2022-12-20 14:00:00',
-         ]);
+            'alertName' => 'Thanos ataca Madrid',
+            'description' => 'Thanos va a atacar Madrid con su guante de mielda',
+            'heroesRequired' => 10,
+            'img' => 'https://www.royalcanin.com/es/dogs/breeds/breed-library/billy',
+            'datetime'=> '2022-12-20 14:00:00',
+        ]);
 
         Crime::factory(5)->create();
     }
