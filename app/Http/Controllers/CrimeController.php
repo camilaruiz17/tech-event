@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\models\Crime;
 use Illuminate\Http\Request;
 
 class CrimeController extends Controller
@@ -14,6 +15,8 @@ class CrimeController extends Controller
     public function index()
     {
         //
+        $crimes = Crime::get();
+        var_dump($crimes);
     }
 
     /**
