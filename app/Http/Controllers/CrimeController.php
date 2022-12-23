@@ -16,7 +16,8 @@ class CrimeController extends Controller
     {
         //
         $crimes = Crime::get();
-        var_dump($crimes);
+       /*  var_dump($crimes); */
+       return view('home', ('crimes'));
     }
 
     /**
