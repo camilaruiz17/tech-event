@@ -30,6 +30,6 @@ class DatabaseSeeder extends Seeder
             'datetime'=> '2022-12-20 14:00:00',
         ]);
 
-        Crime::factory(50)->create();
+        Crime::factory(20)->create();
     }
 }

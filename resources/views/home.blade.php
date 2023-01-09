@@ -29,14 +29,11 @@
                 onclick="return confirm('¿Estas seguro de querer eliminar este Evento? {{ $crime->alertName}} - ID {{$crime->id }}')">
                 🚮
                 </button>
+                <a class="bt-adm m-1 d-flex justify-content-center align-items-center" href="{{ route('editCrime', ['id' => $crime->id]) }}">✏️</a>
             </form>
         </div>
     </div>
     @endforeach
 </div>
-
-
-
-estamos en la home
 
 @endsection

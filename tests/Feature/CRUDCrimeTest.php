@@ -64,4 +64,14 @@ class CRUDCrimeTest extends TestCase
 
     }
 
+    public function test_aCrimeCanBeUpdated(){
+        $this->withExceptionHandling();
+
+        $crime = Crime::factory()->create();
+        $this->assertCount(1, Crime::all());
+
+        $response = $this->patch(route('updateCrime', $crime->id), ['alertName' => 'New name']);
+        $this->assertEquals('New name', Crime::first()->alertName);
+    }
+
 }

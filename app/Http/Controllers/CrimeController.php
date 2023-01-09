@@ -64,7 +64,9 @@ class CrimeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $crime = Crime::find($id);
+
+        return view ('editCrime', compact('crime'));
     }
 
     /**
@@ -76,7 +78,12 @@ class CrimeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $crime = request()->except('_token', '_method');
+
+        Crime::where('id', '=', $id)->update($crime);
+
+        return redirect()->route('home');
+       
     }
 
     /**
