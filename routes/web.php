@@ -6,6 +6,8 @@ use App\Http\Controllers\CrimeController;
 
 Auth::routes();
 
-Route::get('/', [CrimeController::class, 'index']);
+Route::get('/', [CrimeController::class, 'index'])->name('home');
 
 Route::get('/home', [CrimeController::class, 'index']);
+Route::delete('/delete/{id}', [CrimeController::class, 'destroy'])->name
+('deleteCrime');

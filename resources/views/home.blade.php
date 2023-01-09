@@ -12,8 +12,15 @@
             <h5 class="card-title text-danger">{{ $crime->heroesRequired }}</h5>
             <h5 class="card-title text-white">{{ $crime->datetime }}</h5>
             <h5 class="card-title text-warning">{{ $crime->description }}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
+                @method('delete')
+                @csrf
+                <button type="submit"
+                class="bt-adm m-1 d-flex justify-content-center aling-items-center"
+                onclick="return confirm('¿Estas seguro de querer eliminar este Evento? {{ $crime->alertName}} - ID {{$crime->id }}')">
+                🚮
+                </button>
+            </form>
         </div>
     </div>
     @endforeach

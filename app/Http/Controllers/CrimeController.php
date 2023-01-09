@@ -84,5 +84,8 @@ class CrimeController extends Controller
     public function destroy($id)
     {
         //
+        Crime::destroy($id);
+
+        return redirect()->route('home');
     }
 }

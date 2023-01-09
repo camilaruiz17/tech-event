@@ -43,9 +43,16 @@ class CRUDCrimeTest extends TestCase
         $crime = Crime::factory()->create();
         $this->assertCount(1, Crime::all());
 
-        $response = $this->delete('deleteCrime', $crime->id);
+        $response = $this->delete(route('deleteCrime', $crime->id));
     
         $this->assertCount(0, Crime::all());
 
     }
+    /* public function test_anCrimeCanBeCreated(){
+        $this->withExceptionHandling();
+
+        $response = $this->post(route('storeCrime', $crime->id),
+
+    );}*/
+
 }
