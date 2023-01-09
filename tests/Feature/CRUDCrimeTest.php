@@ -51,7 +51,7 @@ class CRUDCrimeTest extends TestCase
     public function test_aCrimeCanBeCreated(){
         $this->withExceptionHandling();
 
-        $response = $this->post(route('storeCrime', $crime->id),
+        $response = $this->post(route('storeCrime'),
         [
             'alertName' => 'alertName',
             'description' => 'description',
@@ -60,7 +60,7 @@ class CRUDCrimeTest extends TestCase
             'datetime'=> '2022-12-20 14:00:00',
         ]);
 
-        $this->assertCount(0, Crime::all());
+        $this->assertCount(1, Crime::all());
 
     }
 

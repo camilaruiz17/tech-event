@@ -38,7 +38,11 @@ class CrimeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $crime = request()->except('_token');
+
+        Crime::create($crime);
+
+        return redirect()->route('home');
     }
 
     /**

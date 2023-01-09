@@ -3,9 +3,9 @@
 @section('content')
 
     <div>
-        <button class=""btn btn-primary>
+        <button class=""btn btn-primary">
             <a href="{{ route('createCrime') }}">
-                <div class="text-warning">CREATE NEW EVENT</div>
+                <div class="text-warning">CREATE NEW ALERT</div>
             </a>
         </button>
     </div>
@@ -18,7 +18,7 @@
         <img src="{{ $crime->img }}" class="card-img-top" alt="...">
         <div class="card-body bg-dark">
             <h5 class="card-title text-primary">{{ $crime->alertName }}</h5>
-            <h5 class="card-title text-danger">{{ $crime->heroesRequired }}</h5>
+            <h5 class="card-title text-danger">{{ $crime->heroesRequired }} Heroes Required</h5>
             <h5 class="card-title text-white">{{ $crime->datetime }}</h5>
             <h5 class="card-title text-warning">{{ $crime->description }}</h5>
             <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
