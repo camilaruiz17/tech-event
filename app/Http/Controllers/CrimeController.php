@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\models\Crime;
+use App\Models\Crime;
 use Illuminate\Http\Request;
 
 class CrimeController extends Controller
