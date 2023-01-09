@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <div>
+        <button class=""btn btn-primary>
+            <a href="{{ route('createCrime') }}">
+                <div class="text-warning">CREATE NEW EVENT</div>
+            </a>
+        </button>
+    </div>
+
 <div class="d-flex flex-wrap row justify-content-center my-4 px-xxl-5">>
 
 @foreach ($crimes as $crime)

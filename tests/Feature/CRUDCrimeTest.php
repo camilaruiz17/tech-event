@@ -37,7 +37,7 @@ class CRUDCrimeTest extends TestCase
             ->assertViewIs('home');
     }
 
-    public function test_anCrimeCanBeDeleted(){
+    public function test_aCrimeCanBeDeleted(){
         $this->withExceptionHandling();
 
         $crime = Crime::factory()->create();
@@ -48,11 +48,20 @@ class CRUDCrimeTest extends TestCase
         $this->assertCount(0, Crime::all());
 
     }
-    /* public function test_anCrimeCanBeCreated(){
+    public function test_aCrimeCanBeCreated(){
         $this->withExceptionHandling();
 
         $response = $this->post(route('storeCrime', $crime->id),
+        [
+            'alertName' => 'alertName',
+            'description' => 'description',
+            'heroesRequired' => '10',
+            'img' => 'img',
+            'datetime'=> '2022-12-20 14:00:00',
+        ]);
 
-    );}*/
+        $this->assertCount(0, Crime::all());
+
+    }
 
 }

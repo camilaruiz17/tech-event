@@ -27,7 +27,7 @@ class CrimeController extends Controller
      */
     public function create()
     {
-        //
+        return view ('createCrime');
     }
 
     /**
