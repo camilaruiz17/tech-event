@@ -74,4 +74,18 @@ class CRUDCrimeTest extends TestCase
         $this->assertEquals('New name', Crime::first()->alertName);
     }
 
+
+    public function test_aCrimeCanBeShown(){
+        $this->withExceptionHandling();
+
+        $crime=Crime::factory()->create();
+        $this->assertCount(1,Crime::all());
+
+        $response=$this->get(route('showCrime', $crime->id));
+
+        $response->assertSee($crime->name);
+
+        $response->assertStatus(200)->assertViewIs('showCrime');
+    }
+
 }
