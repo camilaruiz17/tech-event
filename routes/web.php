@@ -17,3 +17,5 @@ Route::post('/', [CrimeController::class, 'store'])->name('storeCrime');
 
 Route::get('/edit/{id}', [CrimeController::class, 'edit'])->name('editCrime');
 Route::patch('/crime/{id}', [CrimeController::class,'update'])->name('updateCrime');
+
+Route::get('/show/{id}', [CrimeController::class,'show'])->name('showCrime');

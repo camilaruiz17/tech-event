@@ -54,6 +54,9 @@ class CrimeController extends Controller
     public function show($id)
     {
         //
+        $crime = Crime::find($id);
+
+        return view ('showCrime', compact('crime'));
     }
 
     /**
@@ -72,7 +75,7 @@ class CrimeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request  /$request/
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -83,7 +86,7 @@ class CrimeController extends Controller
         Crime::where('id', '=', $id)->update($crime);
 
         return redirect()->route('home');
-       
+    
     }
 
     /**
