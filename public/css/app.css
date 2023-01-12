@@ -1,0 +1,9 @@
+.cardHero {
+    border-radius: 50%;
+    border: solid 4px black;
+}
+
+body {
+    background-color: black;
+}
+

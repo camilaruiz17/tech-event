@@ -15,7 +15,7 @@
 @foreach ($crimes as $crime)
 
     <a href="{{ route('showCrime', $crime->id) }}">
-        <div class="card" style="width: 18rem;">
+        <div class="cardHero" style="width: 18rem;">
             <img src="{{ $crime->img }}" class="card-img-top" alt="..."> 
             <div class="card-body bg-dark">
                 <h5 class="card-title text-primary">{{ $crime->alertName }}</h5>
