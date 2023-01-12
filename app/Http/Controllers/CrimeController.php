@@ -15,7 +15,7 @@ class CrimeController extends Controller
     public function index()
     {
         //
-        $crimes = Crime::get();
+        $crimes = Crime::paginate(5);
        /*  var_dump($crimes); */
         return view('home', compact('crimes'));
     }
