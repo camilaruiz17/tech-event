@@ -9,14 +9,14 @@
             </a>
         </button>
     </div>
-
 <div class="d-flex flex-wrap wrap justify-content-center my-4 px-xxl-5">
 
 @foreach ($crimes as $crime)
 
-    <a href="{{ route('showCrime', $crime->id) }}">
         <div class="card" style="width: 18rem;">
-            <img src="{{ $crime->img }}" class="card-img-top" alt="..."> 
+            <a href="{{ route('showCrime', $crime->id) }}">
+            <img src="{{ $crime->img }}" class="card-img-top" alt="...">
+            
             <div class="card-body bg-dark">
                 <h5 class="card-title text-primary">{{ $crime->alertName }}</h5>
                 <h5 class="card-title text-danger">{{ $crime->heroesRequired }} Heroes Required</h5>
