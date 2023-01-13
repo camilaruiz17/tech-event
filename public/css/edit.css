@@ -31,9 +31,14 @@
     justify-content: space-around;
 }
 
+.btnBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cancelBtn {
     display: block;
-    margin: 0px auto;
     text-decoration: none;
     color: black;
     font-weight: bold;

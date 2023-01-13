@@ -33,8 +33,8 @@
 
                     <div class="btnContainer">
                         <div class="float-right" >
-                        <a class="cancelBtn" href="{{ route('home') }}">CANCEL</a>
-                    </div>
+                            <a class="cancelBtn" href="{{ route('home') }}">CANCEL</a>
+                        </div>
                         <div class="btnCreate">
                             <button type="submit" class="editBtn" value="Create">EDIT</button>
                         </div>
