@@ -1,0 +1,53 @@
+/* Card */
+.col-md-8 {
+    padding: 20px;
+}
+
+.card-title {
+    padding: 10px 0 20px 20px;
+}
+
+/* Inputs */
+.input-group-text {
+    font-weight: bold !important;
+    padding: 5px;
+    border-radius: 0% !important;
+    border: solid 2px black !important;
+    margin-left: 30px;
+}
+
+.form-control {
+    padding: 5px;
+    border-radius: 0% !important;
+    border: solid 2px black !important;
+    margin-right: 30px;
+}
+
+/* Buttons */
+.btnContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancelBtn {
+    display: block;
+    margin: 0px auto;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #13eed4;
+    height: 39px;
+    width: 79px;
+}
+
+.cancelBtn:hover {
+    color: black;
+}
+
+.editBtn {
+    font-weight: bold;
+    background-color: #0ef125;
+    border: solid 1px #0ef125;
+    height: 39px;
+    width: 79px;
+}
