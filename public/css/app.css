@@ -8,3 +8,17 @@ body {
     color: black;
 }
 
+.socialMedia {
+    color: black;
+}
+
+footer {
+    background-color: aqua;
+    display: flex;
+    justify-content:space-around;
+}
+
+.socialMedia {
+    display:block;
+    overflow:auto;
+}
