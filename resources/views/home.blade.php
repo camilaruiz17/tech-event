@@ -12,16 +12,16 @@
     <section class="slider">
         <div class="slider__container container">
           <img src="./imgslider/leftarrow.svg" class="slider__arrow" id="before">
-          @foreach ($crimes as $crime)
-            <section class="slider__body" data-id="{{ $crime->id }}">
+          @foreach ($important as $importantCrime)
+            <section class="slider__body" data-id="{{ $importantCrime->id }}">
                 <div class="slider__texts">
-                <h2 class="subtitle" >{{ $crime->alertName }} {{ $crime->important }}</h2>
+                <h2 class="subtitle" >{{ $importantCrime->alertName }}</h2>
                 <p class="slider__review">
-                    {{ $crime->description }}
+                    {{ $importantCrime->description }}
                 </p>
                 </div>
                 <figure class="slider__picture">
-                <img src="{{ $crime->img }}" class="slider__img">
+                <img src="{{ $importantCrime->img }}" class="slider__img">
                 </figure>
             </section>
         @endforeach
@@ -57,7 +57,7 @@
 </div>
 
 <div class="d-flex justify-content-end">
-        {!! $crimes->links() !!}
+    {!! $crimes->links() !!}
 </div>
 
 @endsection
