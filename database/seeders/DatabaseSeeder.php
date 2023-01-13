@@ -27,28 +27,28 @@ class DatabaseSeeder extends Seeder
             'alertName' => 'Thanos ataca Madrid',
             'description' => 'Thanos va a atacar Madrid con su guante',
             'heroesRequired' => 10,
-            'img' => '/public/imgSlider/thanosAttacksMadrid.jpg',
+            'img' => '/imgSlider/thanosAttacksMadrid.jpg',
             'datetime'=> '2022-12-20 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Thanos ataca Madrid',
             'description' => 'Thanos va a atacar Madrid con su guante',
             'heroesRequired' => 10,
-            'img' => '/public/imgSlider/venomAttacksJersey.jpg',
+            'img' => '/imgSlider/venomAttacksJersey.jpg',
             'datetime'=> '2022-12-20 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Thanos ataca Madrid',
             'description' => 'Thanos va a atacar Madrid con su guante',
             'heroesRequired' => 10,
-            'img' => '/public/imgSlider/greenGobblinAttacksLondon.jpg',
+            'img' => '/imgSlider/greenGobblinAttacksLondon.jpg',
             'datetime'=> '2022-12-20 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Thanos ataca Madrid',
             'description' => 'Thanos va a atacar Madrid con su guante',
             'heroesRequired' => 10,
-            'img' => '/public/imgSlider/mysterioAttacksNewYork.jpg',
+            'img' => '/imgSlider/mysterioAttacksNewYork.jpg',
             'datetime'=> '2022-12-20 14:00:00',
         ]);
         Crime::factory()->create([
