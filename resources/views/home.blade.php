@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div>
         <button class=""btn btn-primary">
             <a href="{{ route('createCrime') }}">
@@ -9,11 +8,29 @@
             </a>
         </button>
     </div>
-
+    <p>aqui el slider</p>
+    <section class="slider">
+        <div class="slider__container container">
+          <img src="./imgslider/leftarrow.svg" class="slider__arrow" id="before">
+          @foreach ($crimes as $crime)
+            <section class="slider__body" data-id="{{ $crime->id }}">
+                <div class="slider__texts">
+                <h2 class="subtitle" >{{ $crime->alertName }} {{ $crime->important }}</h2>
+                <p class="slider__review">
+                    {{ $crime->description }}
+                </p>
+                </div>
+                <figure class="slider__picture">
+                <img src="{{ $crime->img }}" class="slider__img">
+                </figure>
+            </section>
+        @endforeach
+          <img src="./imgslider/rightarrow.svg" class="slider__arrow" id="after">
+        </div>
+      </section>
 <div class="d-flex flex-wrap wrap justify-content-center my-4 px-xxl-5">
 
 @foreach ($crimes as $crime)
-
     <a href="{{ route('showCrime', $crime->id) }}">
         <div class="cardHero" style="width: 18rem;">
             <img src="{{ $crime->img }}" class="card-img-top" alt="..."> 
