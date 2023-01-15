@@ -1,24 +1,79 @@
-.cardHero {
-    border-radius: 50%;
-    border: solid 4px black;
+.navbar-brand {
+    font-weight: bolder !important;
+    color:rgb(0, 0, 0) !important;
+
 }
 
-body {
-    background-color: black;
-    color: black;
-}
-
-.socialMedia {
-    color: black;
-}
-
-footer {
-    background-color: aqua;
+.buttonNewCrime{
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
+}
+
+.crimesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.cardHero {
+    display: flex;
+    background-color: rgba(204, 196, 194, 0.655) !important;
+    margin: 0.5em;
+    width: 90%;
+}
+
+@media (min-width: 700px) {
+    .cardHero {
+        width: 70%
+    }
+}
+
+.cardImg {
+    width: 100%;
+    height: 100%;
+}
+
+.cardBody {
+    margin: 0.25em;
+}
+
+/*body {
+    background-color: rgba(202, 190, 185, 0.808);
+}*/
+
+.card-title-text-primary {
+    color: rgba(154, 0, 0, 0.599) ;
+    -webkit-text-stroke: 1px rgb(28, 28, 28);
+}
+
+.card-title-text-danger {
+    color: rgba(142, 0, 0, 0.818);
+}
+
+.card-title-text-white{
+    color: rgb(105, 105, 105);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.deleteButton {
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .socialMedia {
+    color: black;
     display:block;
     overflow:auto;
 }
+
+footer {
+    background-color: rgb(105, 105, 105);
+    display: flex;
+    justify-content:space-around;
+    padding: 20px;
+}
+
