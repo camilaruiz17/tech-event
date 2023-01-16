@@ -30,12 +30,14 @@
                             <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Date Time">
                         </div>
 
-                        <div class="float-right">
-                            <a href="{{ route('home') }}">🔙</a>
-                        </div>
+                         <div class="btnContainer">
+                            <div class="btnBack">
+                                <a class="cancelBtn"  href="{{ route('home') }}">BACK</a>
+                            </div>
 
-                        <div class="btnCreate">
-                            <button type="submit" class="btn btn-outline-succes" value="Create">Create</button>
+                            <div class="btnCreate">
+                                <button type="submit" class="editBtn" value="Create">CREATE</button>
+                            </div>
                         </div>
                     </form>
                 </div>
