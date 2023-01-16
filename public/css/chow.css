@@ -21,7 +21,7 @@ h1 {
 }
 
 /* Buttons  */
-.btnContainer {
+.btnContainerShow {
     display: flex;
     justify-content: center;
     align-items: center;

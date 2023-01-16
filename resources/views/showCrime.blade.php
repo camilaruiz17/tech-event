@@ -13,7 +13,7 @@
                     <h2>{{ $crime->description}}</h2>
                     <h2>{{ $crime->datetime}}</h2>
                 </div>
-                <div class="btnContainer">
+                <div class="btnContainerShow">
                     <a class="cancelBtn" href=" {{ route('home') }}"> BACK </a>
                 </div>
             </div>
