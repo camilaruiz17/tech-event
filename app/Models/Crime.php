@@ -15,4 +15,8 @@ class Crime extends Model
         'img',
         'datetime',
     ];
+
+    public function user(){
+        return $this->belongsToMany(User::class);
+    }
 }

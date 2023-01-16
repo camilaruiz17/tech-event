@@ -25,14 +25,21 @@
                 <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                     @method('delete')
                     @csrf
+                    @if(Auth::check() && Auth::user()->isAdmin)
                     <button type="submit"
                     class="bt-adm m-1 d-flex justify-content-center aling-items-center"
                     onclick="return confirm('¿Estas seguro de querer eliminar este Evento? {{ $crime->alertName}} - ID {{$crime->id }}')">
                     🚮
                     </button>
                     <a class="bt-adm m-1 d-flex justify-content-center align-items-center" 
-                                href="{{ route('editCrime', ['id' => $crime->id]) }}">✏️</a>         
+                                href="{{ route('editCrime', ['id' => $crime->id]) }}">✏️</a> 
+                    @endif        
                 </form>
+                <div>
+                    <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Register</a></button>
+                    <button class="text-warning"><a href="{{route('unscribe', $crime->id)}}">Unregister</a></button>
+                </div>
+            
             </div>
         </div>
     </a>

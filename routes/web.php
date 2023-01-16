@@ -22,5 +22,8 @@ Route::get('/edit/{id}', [CrimeController::class, 'edit'])->name
 Route::patch('/crime/{id}', [CrimeController::class,'update'])->name
 ('updateCrime');
 
-Route::get('/show/{id}', [CrimeController::class,'show'])->name
-('showCrime');
+Route::get('/show/{id}', [CrimeController::class,'show'])->name('showCrime');
+
+
+Route::get('/inscribe/{id}', [CrimeController::class,'inscribe'])->name('inscribe')->middleware('auth');
+Route::get('/unscribe/{id}', [CrimeController::class,'unscribe'])->name('unscribe')->middleware('auth');
