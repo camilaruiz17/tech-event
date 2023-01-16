@@ -10,6 +10,26 @@
         </button>
     </div>
 
+    <section class="slider">
+        <div class="slider__container container">
+            <img src="./imgslider/leftarrow.svg" class="slider__arrow" id="before">
+            @foreach ($important as $importantCrime)
+                <section class="slider__body" data-id="{{ $importantCrime->id }}">
+                    <div class="slider__texts">
+                    <h2 class="subtitle" >{{ $importantCrime->alertName }}</h2>
+                    <p class="slider__review">
+                        {{ $importantCrime->description }}
+                    </p>
+                    </div>
+                    <figure class="slider__picture">
+                    <img src="{{ $importantCrime->img }}" class="slider__img">
+                    </figure>
+                </section>
+            @endforeach
+            <img src="./imgslider/rightarrow.svg" class="slider__arrow" id="after">
+        </div>
+    </section>
+
 <div class="crimesList">
 
 @foreach ($crimes as $crime)
@@ -21,7 +41,12 @@
                 <h5 class="card-title-text-primary">{{ $crime->alertName }}</h5>
                 <h5 class="card-title-text-danger">{{ $crime->heroesRequired }} Heroes Required</h5>
                 <h5 class="card-title-text-white">{{ $crime->datetime }}</h5>
-                <!-- <h5 class="card-title text-warning">{{ $crime->description }}</h5> -->
+                <h5 class="card-title text-warning">{{ $crime->description }}</h5>
+                
+                @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
+                    <h5>Evento ya paso</h5>
+                @endif
+                
                 <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                     @method('delete')
                     @csrf

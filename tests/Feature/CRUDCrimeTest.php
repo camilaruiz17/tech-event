@@ -58,6 +58,7 @@ class CRUDCrimeTest extends TestCase
             'heroesRequired' => '10',
             'img' => 'img',
             'datetime'=> '2022-12-20 14:00:00',
+            'important'=> '0',
         ]);
 
         $this->assertCount(1, Crime::all());

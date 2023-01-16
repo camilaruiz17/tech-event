@@ -16,8 +16,10 @@ class CrimeController extends Controller
     {
         //
         $crimes = Crime::paginate(5);
-       /*  var_dump($crimes); */
-        return view('home', compact('crimes'));
+        $important = Crime::cursor()->filter(function ($crime) {
+            return $crime->important > 0;
+        });
+        return view('home', compact('crimes', 'important'));
     }
 
     /**
