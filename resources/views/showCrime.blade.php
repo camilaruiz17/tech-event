@@ -2,17 +2,23 @@
 
 @section('content')
 
-    <div class="text-center">
-        <img class="img-thumbnail" src="{{$crime->img}}" alt="">
-        <div>
-            <h2>{{ $crime->name}}</h2>
-            <h2>{{ $crime->spaces}}</h2>
-            <h2>{{ $crime->description}}</h2>
-            <h2>{{ $crime->datetime}}</h2>
-        </div>
-        <div class="float-right">
-            <a class="btn btn-primary" href=" {{ route('home') }}> ↩️ <a/>
+<div class="containerCreate">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="showCard">
+                <img class="img-thumbnail" src="{{$crime->img}}" alt="">
+                <div clas="cardText">
+                    <h1 class="boldy">{{ $crime->alertName}}</h1>
+                    <h2>{{ $crime->heroesRequired}} HEROES REQUIRED</h2>
+                    <h2>{{ $crime->description}}</h2>
+                    <h2>{{ $crime->datetime}}</h2>
+                </div>
+                <div class="btnContainer">
+                    <a class="cancelBtn" href=" {{ route('home') }}"> BACK </a>
+                </div>
+            </div>
         </div>
     </div>
+</div>    
 
 @endsection
