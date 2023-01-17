@@ -8,6 +8,7 @@ Auth::routes();
 
 Route::get('/', [CrimeController::class, 'index'])->name('home');
 Route::get('/home', [CrimeController::class, 'index']);
+Route::get('/eventos/{id}', [CrimeController::class, 'eventos'])->name('userEvents');
 
 Route::delete('/delete/{id}', [CrimeController::class, 'destroy'])->name
 ('deleteCrime');

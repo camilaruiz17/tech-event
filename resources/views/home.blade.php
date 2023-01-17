@@ -8,7 +8,6 @@
             </a>
         </button>
     </div>
-    <p>aqui el slider</p>
     <section class="slider">
         <div class="slider__container container">
           <img src="./imgslider/leftarrow.svg" class="slider__arrow" id="before">
@@ -39,6 +38,10 @@
                 <h5 class="card-title text-danger">{{ $crime->heroesRequired }} Heroes Required</h5>
                 <h5 class="card-title text-white">{{ $crime->datetime }}</h5>
                 <!-- <h5 class="card-title text-warning">{{ $crime->description }}</h5> -->
+
+                @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
+                    <h5>Evento ya paso</h5>
+                @endif
                 <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                     @method('delete')
                     @csrf

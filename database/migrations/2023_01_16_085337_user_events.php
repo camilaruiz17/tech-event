@@ -13,15 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('crimes', function (Blueprint $table) {
+        //
+        Schema::create('user_events', function (Blueprint $table) {
             $table->id();
-
-            $table->string('alertName',150);
-            $table->string('description',250);
-            $table->integer('heroesRequired');
-            $table->string('img');
-            $table->dateTime('datetime');
-            $table->integer('important');
+            $table->integer('user_id');
+            $table->integer('event_id');
+            $table->integer('status');
             $table->timestamps();
         });
     }
@@ -33,6 +30,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('crimes');
+        //
+        Schema::dropIfExists('user_events');
     }
 };
