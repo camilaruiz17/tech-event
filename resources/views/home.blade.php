@@ -44,7 +44,7 @@
                 <h5 class="card-title text-warning">{{ $crime->description }}</h5>
                 
                 @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
-                    <h5>Evento ya paso</h5>
+                    <h5>Strok Overcome</h5>
                 @endif
                 
                 <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
