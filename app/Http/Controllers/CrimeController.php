@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Crime;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CrimeController extends Controller
 {
@@ -57,7 +59,7 @@ class CrimeController extends Controller
     {
         //
         $crime = Crime::find($id);
-
+        
         return view ('showCrime', compact('crime'));
     }
 
@@ -104,4 +106,25 @@ class CrimeController extends Controller
 
         return redirect()->route('home');
     }
+
+    public function inscribe($id){
+
+        $crime = Crime::find($id);
+        $user = User::find(Auth::id());
+
+        $user->crime()->attach($crime);
+
+        return redirect()->route('home');
+    }
+
+    public function unscribe($id){
+
+        $crime = Crime::find($id);
+        $user = User::find(Auth::id());
+                
+        $user->crime()->detach($crime);
+
+        return redirect()->route('home');
+    }
 }
+

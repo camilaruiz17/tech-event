@@ -16,4 +16,9 @@ class Crime extends Model
         'datetime',
         'important',
     ];
+
+    public function user(){
+        return $this->belongsToMany(User::class);
+    }
+
 }

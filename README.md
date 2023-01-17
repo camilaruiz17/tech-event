@@ -1,66 +1,131 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1>Project: "Tech Events Manager" (Preview Version)</h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<h2>1. Project description:</h2>
+<ul>
+<li>The client has asked us to design and develop a web application for the management of events or online meetups.</li>
+<li>This application is linked to the registration of superheroes to an event that will have as its purpose,</li>
+<li>Save the earth from the attack of villains.</li>
+<li>Superheroes will be able to view the event description (Attack Threat), sign up and unsign.</li>
+<li>Superheroes will be able to see the list of events they have signed up to save the planet.</li>
+<li>The administrator will have the tools for the management (CRUD) of the events.</li>
+</ul>
 
-## About Laravel
+<h2>2. User stories:</h2>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h3>2.1 User Story (Guest):</h3>
+<ul>
+<li>See the page.</li>
+<li>Have the option of pressing the info button to view the events.</li>
+<li>Have the option to login to be a user, see the events and sign up for them.</li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h3>2.2 User Story (User):</h3>
+<ul>
+<li>Being able to register for events.</li>
+<li>Receive an email with the details of the event in which you have registered.</li>
+<li>See the list of events in which you are registered.</li>
+<li>Receive an email confirmation of your registration.</li>
+<li>Unregister events you don't want to attend.</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h3>2.3 User Story (Administrator):</h3>
+<ul>
+<li>View page as admin.</li>
+<li>Access events.</li>
+<li>Add new events.</li>
+<li>Delete events.</li>
+<li>Edit events.</li>
+<li>Modify the capacity of events.</li>
+</ul>
 
-## Learning Laravel
+<h2>3. Fullstack Developer Team</h2>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<ul>
+<li>Carmen Cruces (Scrum Master) https://github.com/CarmenCruces</li>  
+<li>Alba Rus https://github.com/Albaric0que</li> 
+<li>Natalia Palomo https://github.com/Nataliaplm</li> 
+<li>Camila Ruíz (Product Owner) https://github.com/camilaruiz17/li> 
+<li>Sandra León https://github.com/sandraldr27</li>   
+</ul>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h2>4. Project Demo (Preview)</h2>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:200px; height:450px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211418361-0dc2cbc4-db75-41a0-84c8-a57e3c666cc8.png" alt="Preliminary project demo"/>
+</div>
 
-## Laravel Sponsors
+<h2>5. Initial Sketch</h2>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211054504-ca4eb5b2-8f17-4f45-81d8-028cd17fa520.png" alt="Sketch & Initial Design"/>
+</div>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<h2>6. Atomic Design</h2> 
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211408557-c19d3cde-1f5c-4fe6-887f-5bcac3fcd960.png" alt="Atomic Design"/>
+</div>
 
-### Premium Partners
+<h2>7. Final Design</h2> 
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211408326-25ffb90b-cf66-4822-bae8-39f873c1c3f2.png" alt="PFinal Design 1"/>
+<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211411255-69a7a393-79d4-41a2-a15c-a025d54f0940.png" alt="PFinal Design "/>
+</div>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+<h2>8. Stacks</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>PHP</li>
+<li>Laravel</li>
+<li>Boostrap</li>
+<li>NPM</li>
+</ul>
 
-## Contributing
+<h2>9. Required:</h2>
+<li>Composer & Laravel Installed.</li>
+<li>XAMPP/LAMPP Installed.</li>
+<li>NPM Installed.</li>
+<li>MySQL.</li>
+<li>PHP Artisan Serve.</li>
+<li>PHP (Minimum, version 7.4).</li>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<h3>To install Project</h3>
+<li>Open Visual Studio Code</li>
+<li>In the link https://github.com/camilaruiz17/tech-eventaccess the CODE tab.</li>
+<li>Within the CODE tab copy the link that appears in HTTPS.</li>
+<li>In Visual Studio Code run <b>git clone</b> command, an paste the HTTPS.</li>
+<li>Write in the Visual Studio Code terminal the command: <b>composer create-project --prefer-dist</b> and press intro.</li>
+<li>An <b>.env</b> file (in the form of a little wheel) will be downloaded. Go into it and rename the line <b>DB_DATABASE</b>. Change the name generated by default and write <b>tech-event.</b></li>
+<li>Open XAMPP or LAMPP.</li>
+<li>Login to <b>phpMyAdmin</b> and create a new table named <b>tech-event.</b></li>
+<li>Type in the Visual Studio Code terminal: <b>php artisan migrate:fresh --seed</b> and press intro.</li>
+<li>Type in the Visual Studio Code terminal: <b>composer require laravel/ui</b> and press intro.</li>
+<li>Type in the Visual Studio Code terminal: <b>php artisan ui bootstrap --auth</b> and press intro.</li>
+<li>Type in the Visual Studio Code terminal: <b>npm install</b> and press intro.</li>
+<li>Type in the Visual Studio Code terminal: <b>npm run dev</b> and press intro. Then open another terminal in Visual Studio Code without closing the previous one</li>
+<li>Type in the Visual Studio Code terminal: <b>php artisan migrate</b> and press intro</li>
+<li>Type in the Visual Studio Code terminal: <b>php artisan serve</b> and press intro.</li>
 
-## Code of Conduct
+<h3>Warning & Testing</h3>
+<ol>
+<li><b>Important</b>: If we then need to run more commands in Visual Studio Code, we'll open a third terminal without closing the previous two.</li>
+<li><b>Test</b>: Run in the Visual Studio Code <b>php artisan test</b> where it should return the following result:<b>4 passed</b></li>
+</ol>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211416841-83e571ab-fe61-470f-af14-898b38aa83e9.png" alt="finalTest"/>
+</div>
 
-## Security Vulnerabilities
+<h2>10. Methodology:</h2>
+<ul>
+<li>Mob programming.</li>
+<li>Pair programming.</li>
+<li>Agile with SCRUM</li>
+</ul>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<h2>11. Next Steps</h2>
+<ul>
+<li>Continue to implement the CRUD.</li>
+<li>Continue implementing the design.</li>
+<li>Continue implementing functionalities.</li>
+</ul>

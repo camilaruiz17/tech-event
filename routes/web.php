@@ -9,12 +9,24 @@ Auth::routes();
 Route::get('/', [CrimeController::class, 'index'])->name('home');
 Route::get('/home', [CrimeController::class, 'index']);
 
-Route::delete('/delete/{id}', [CrimeController::class, 'destroy'])->name('deleteCrime');
+Route::delete('/delete/{id}', [CrimeController::class, 'destroy'])->name
+('deleteCrime')->middleware('isadmin', 'auth');
 
-Route::get('/create', [CrimeController::class, 'create'])->name('createCrime');
-Route::post('/', [CrimeController::class, 'store'])->name('storeCrime');
+Route::get('/create', [CrimeController::class, 'create'])->name
+('createCrime')->middleware('isadmin', 'auth');
 
-Route::get('/edit/{id}', [CrimeController::class, 'edit'])->name('editCrime');
-Route::patch('/crime/{id}', [CrimeController::class,'update'])->name('updateCrime');
+Route::post('/', [CrimeController::class, 'store'])->name
+('storeCrime')->middleware('isadmin', 'auth');
+
+Route::get('/edit/{id}', [CrimeController::class, 'edit'])->name
+('editCrime')->middleware('isadmin', 'auth');
+
+Route::patch('/crime/{id}', [CrimeController::class,'update'])->name
+('updateCrime');
 
 Route::get('/show/{id}', [CrimeController::class,'show'])->name('showCrime');
+
+
+Route::get('/inscribe/{id}', [CrimeController::class,'inscribe'])->name('inscribe')->middleware('auth');
+
+Route::get('/unscribe/{id}', [CrimeController::class,'unscribe'])->name('unscribe')->middleware('auth');

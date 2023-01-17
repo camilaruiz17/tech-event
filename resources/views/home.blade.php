@@ -1,14 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="buttonNewCrime">
-        <button class="btn btn-primary">
-            <a href="{{ route('createCrime') }}">
-                <div class="text-warning">CREATE NEW ALERT</div>
-            </a>
-        </button>
-    </div>
+    @if(Auth::check() && Auth::user()->isAdmin)
+        <div>
+            <button class="btn btn-primary">
+                <a href="{{ route('createCrime') }}">
+                    <div class="text-warning">CREATE NEW ALERT</div>
+                </a>
+            </button>
+        </div>
+    @endif
 
     <section class="slider">
         <div class="slider__container container">
@@ -44,20 +45,27 @@
                 <h5 class="card-title text-warning">{{ $crime->description }}</h5>
                 
                 @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
-                    <h5>Strok Overcome</h5>
+                    <h5>Stroke Overcome</h5>
                 @endif
                 
                 <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                     @method('delete')
                     @csrf
+                    @if(Auth::check() && Auth::user()->isAdmin)
                     <button type="submit"
                     class="deleteButton" style="padding: 0px !important;"
-                    onclick="return confirm('¿Estas seguro de querer eliminar este Evento? {{ $crime->alertName}} - ID {{$crime->id }}')">
+                    onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">
                     🚮
                     </button>
                     <a class="bt-adm m-1 d-flex justify-content-center align-items-center" 
-                                href="{{ route('editCrime', ['id' => $crime->id]) }}">✏️</a>         
+                            href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a> 
+                    @endif        
                 </form>
+                <div>
+                    <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Inscribe</a></button>
+                    <button class="text-warning" onclick="return confirm('Are you sure to unsubscribe this crime? {{ $crime->alertName}} - ID {{$crime->id }}')"><a href="{{route('unscribe', $crime->id)}}">Unsubscribe</a></button>
+                </div>
+            
             </div>
         </div>
     </a>
