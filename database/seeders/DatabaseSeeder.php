@@ -24,40 +24,41 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Crime::factory()->create([
-            'alertName' => 'Thanos ataca Madrid',
-            'description' => 'Thanos va a atacar Madrid con su guante',
+            'alertName' => 'Thanos attacks Madrid',
+            'description' => 'Thanos attacks Madrid...',
             'heroesRequired' => 10,
             'img' => '/imgSlider/thanosAttacksMadrid.jpg',
-            'datetime'=> '2022-12-20 14:00:00',
+            'datetime'=> '2023-02-20 14:00:00',
         ]);
         Crime::factory()->create([
-            'alertName' => 'Thanos ataca Madrid',
-            'description' => 'Thanos va a atacar Madrid con su guante',
-            'heroesRequired' => 10,
+            'alertName' => 'Venom attacks Jersey',
+            'description' => 'Venom attacks Jersey...',
+            'heroesRequired' => 8,
             'img' => '/imgSlider/venomAttacksJersey.jpg',
-            'datetime'=> '2022-12-20 14:00:00',
+            'datetime'=> '2023-02-22 14:00:00',
         ]);
         Crime::factory()->create([
-            'alertName' => 'Thanos ataca Madrid',
-            'description' => 'Thanos va a atacar Madrid con su guante',
-            'heroesRequired' => 10,
+            'alertName' => 'Green Goblin attacks London',
+            'description' => 'Green Goblin attacks London...',
+            'heroesRequired' => 9,
             'img' => '/imgSlider/greenGobblinAttacksLondon.jpg',
-            'datetime'=> '2022-12-20 14:00:00',
+            'datetime'=> '2023-01-31 14:00:00',
         ]);
         Crime::factory()->create([
-            'alertName' => 'Thanos ataca Madrid',
-            'description' => 'Thanos va a atacar Madrid con su guante',
+            'alertName' => 'Mysterio attacks New York',
+            'description' => 'Mysterio attacks New York...',
             'heroesRequired' => 10,
             'img' => '/imgSlider/mysterioAttacksNewYork.jpg',
-            'datetime'=> '2022-12-20 14:00:00',
+            'datetime'=> '2023-01-23 14:00:00',
         ]);
         Crime::factory()->create([
-            'alertName' => 'Thanos ataca Madrid',
-            'description' => 'Thanos va a atacar Madrid con su guante',
-            'heroesRequired' => 10,
-            'img' => 'https://www.royalcanin.com/es/dogs/breeds/breed-library/billy',
-            'datetime'=> '2022-12-20 14:00:00',
+            'alertName' => 'Loki attacks The Planet',
+            'description' => 'Loki attacks The Planet...',
+            'heroesRequired' => 20,
+            'img' => '/imgStrokeOvercome/lokiOvercome.jpg',
+            'datetime'=> '2023-01-08 14:00:00',
         ]);
+    
     
 
         Crime::factory(20)->create();

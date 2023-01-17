@@ -38,8 +38,8 @@
                     @endif        
                 </form>
                 <div>
-                    <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Register</a></button>
-                    <button class="text-warning" onclick="return confirm('Are you sure to unregister this crime? {{ $crime->alertName}} - ID {{$crime->id }}')"><a href="{{route('unscribe', $crime->id)}}">Unregister</a></button>
+                    <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Inscribe</a></button>
+                    <button class="text-warning" onclick="return confirm('Are you sure to unsubscribe this crime? {{ $crime->alertName}} - ID {{$crime->id }}')"><a href="{{route('unscribe', $crime->id)}}">Unsubscribe</a></button>
                 </div>
             
             </div>

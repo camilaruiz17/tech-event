@@ -19,4 +19,5 @@ class Crime extends Model
     public function user(){
         return $this->belongsToMany(User::class);
     }
+
 }

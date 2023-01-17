@@ -17,11 +17,11 @@ class CrimeController extends Controller
     public function index()
     {
         //
-        $crimes = Crime::get();
-        // $crimesold
+        $crimes = Crime::get();            
+        // $crimesolved
         // $crimesnew
         // $crimesinscribe
-       /*  var_dump($crimes); */
+        //var_dump($crimes); 
         return view('home', compact('crimes'));
     }
 
@@ -60,7 +60,7 @@ class CrimeController extends Controller
     {
         //
         $crime = Crime::find($id);
-
+        
         return view ('showCrime', compact('crime'));
     }
 
@@ -107,6 +107,7 @@ class CrimeController extends Controller
 
         return redirect()->route('home');
     }
+
     public function inscribe($id){
 
         $crime = Crime::find($id);
@@ -116,15 +117,15 @@ class CrimeController extends Controller
 
         return redirect()->route('home');
     }
+
     public function unscribe($id){
 
         $crime = Crime::find($id);
         $user = User::find(Auth::id());
-
+                
         $user->crime()->detach($crime);
 
         return redirect()->route('home');
     }
-
-
 }
+

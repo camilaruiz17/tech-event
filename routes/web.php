@@ -14,11 +14,13 @@ Route::delete('/delete/{id}', [CrimeController::class, 'destroy'])->name
 
 Route::get('/create', [CrimeController::class, 'create'])->name
 ('createCrime')->middleware('isadmin', 'auth');
+
 Route::post('/', [CrimeController::class, 'store'])->name
 ('storeCrime')->middleware('isadmin', 'auth');
 
 Route::get('/edit/{id}', [CrimeController::class, 'edit'])->name
 ('editCrime')->middleware('isadmin', 'auth');
+
 Route::patch('/crime/{id}', [CrimeController::class,'update'])->name
 ('updateCrime');
 
@@ -26,4 +28,5 @@ Route::get('/show/{id}', [CrimeController::class,'show'])->name('showCrime');
 
 
 Route::get('/inscribe/{id}', [CrimeController::class,'inscribe'])->name('inscribe')->middleware('auth');
+
 Route::get('/unscribe/{id}', [CrimeController::class,'unscribe'])->name('unscribe')->middleware('auth');
