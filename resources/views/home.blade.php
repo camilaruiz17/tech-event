@@ -50,13 +50,14 @@
                         @method('delete')
                         @csrf
                         @if(Auth::check() && Auth::user()->isAdmin)
-                        <button type="submit"
+                        <a type="submit"
                         class="deleteButton" style="padding: 0px !important;"
                         onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">
-                        🚮
-                        </button>
+                        🗑️
+                        </a>
                         <a class="bt-adm m-1d-flex justify-content-center align-items-center" 
-                                href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a> 
+                                href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a>
+                        
                         @endif        
                     </form>
                     <div>
