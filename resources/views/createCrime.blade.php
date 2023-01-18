@@ -29,17 +29,9 @@
                             <span class="input-group-text" id="inputGroup-sizing-default">Date Time</span>
                             <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Date Time">
                         </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Is Important?</span>
-                            <select class="form-select" aria-label="Is important?" name="important">
-                                <option value="1">Yes</option>
-                                <option value="0" selected>No</option>
-                              </select>
-                        </div>
                         <div class="float-right">
                             <a href="{{ route('home') }}">🔙</a>
                         </div>
-
                         <div class="btnCreate">
                             <button type="submit" class="btn btn-outline-succes" value="Create">Create</button>
                         </div>

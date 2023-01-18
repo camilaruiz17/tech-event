@@ -16,7 +16,7 @@ class CrimeController extends Controller
     public function index()
     {
         //
-        $crimes = Crime::paginate(5);
+        $crimes = Crime::orderBy('datetime', 'DESC')->paginate(5);
         $crimesOnSlider = Crime::cursor()->filter(function ($crime) {
             return str_contains(strtolower($crime->alertName), 'important');
         });
