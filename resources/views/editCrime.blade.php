@@ -31,9 +31,9 @@
                             <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="{{ $crime->datetime }}">
                         </div>
 
-                    <div class="btnContainer">
-                        <div class="float-right" >
-                            <a class="cancelBtn" href="{{ route('home') }}">CANCEL</a>
+                   <div class="btnContainer">
+                        <div class="btnBack" >
+                            <button class="cancelBtn"><a href="{{ route('home') }}">CANCEL</a></button>
                         </div>
                         <div class="btnCreate">
                             <button type="submit" class="editBtn" value="Create">EDIT</button>

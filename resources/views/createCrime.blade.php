@@ -32,7 +32,7 @@
 
                          <div class="btnContainer">
                             <div class="btnBack">
-                                <a class="cancelBtn"  href="{{ route('home') }}">BACK</a>
+                                <button class="cancelBtn"><a href="{{ route('home') }}">BACK</a></button>
                             </div>
 
                             <div class="btnCreate">

@@ -23,16 +23,30 @@ h1 {
 /* Buttons  */
 .btnContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.cancelBtn {
-    display: block;
+.cancelBtn,
+.inscribeBtn {
     text-decoration: none;
-    color: black;
     font-weight: bold;
     background-color: #13eed4;
-    height: 39px;
-    width: 79px;
+    border: solid 1px #13eed4;
+    height: 41px;
+    width: 80px;
+}
+
+.unsubscribeBtn {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0ef125;
+    border: solid 1px #0ef125;
+    height: 41px;
+    width: 80px;
+}
+
+.unsubscribeBtn:hover {
+    color: black;
 }
