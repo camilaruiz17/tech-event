@@ -1,4 +1,4 @@
-<h1>Project: "Tech Events Manager" (Preview Version)</h1>
+<h1>Project: "Tech Events Manager"</h1>
 
 <h2>1. Project description:</h2>
 <ul>
