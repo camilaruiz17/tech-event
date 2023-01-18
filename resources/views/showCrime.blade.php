@@ -14,14 +14,14 @@
                     <h2>{{ $crime->datetime}}</h2>
                 </div>
                 <div class="btnContainer">
-                    <div class="">
+                    <div class="stroke">
                         @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
                             <h5>Stroke Overcome</h5>
                         @else
                             <!-- <button type="button" class="btn btn-primary">Check in</button>
                             <button type="button" class="btn btn-primary">Sign out</button> -->
                             <div>
-                                <button class="inscribeBtn"><a href="{{route('inscribe', $crime->id)}}">INSCRIBE</a></button>
+                                <button class="inscribeBtn"><a class="inscribeBtn" href="{{route('inscribe', $crime->id)}}">INSCRIBE</a></button>
                                 <button class="unsubscribeBtn"><a href="{{route('unscribe', $crime->id)}}">UNSUBS</a></button>
                             </div>
                         @endif

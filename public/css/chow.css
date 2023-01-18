@@ -8,6 +8,10 @@ h1 {
     font-weight: bolder;
 }
 
+.stroke {
+    padding-right: 15px;
+}
+
 .showCard {
     border: solid black 3px;
     padding: 20px;
@@ -34,7 +38,7 @@ h1 {
     background-color: #13eed4;
     border: solid 1px #13eed4;
     height: 41px;
-    width: 80px;
+    width: 85px;
 }
 
 .unsubscribeBtn {
@@ -43,6 +47,7 @@ h1 {
     font-weight: bold;
     background-color: #0ef125;
     border: solid 1px #0ef125;
+    margin-left: 15px;
     height: 41px;
     width: 80px;
 }
@@ -50,3 +55,9 @@ h1 {
 .unsubscribeBtn:hover {
     color: black;
 }
+
+/* .btnpadding {
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: space-around;
+} */
