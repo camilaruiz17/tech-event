@@ -46,10 +46,11 @@
                         <h6>Stroke Overcome</h6>
                     @endif
                     
-                    <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
+                    <form class="adminButtons" action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                         @method('delete')
                         @csrf
                         @if(Auth::check() && Auth::user()->isAdmin)
+
                         <a type="submit"
                         class="deleteButton" style="padding: 0px !important;"
                         onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">

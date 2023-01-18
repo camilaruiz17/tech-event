@@ -14,8 +14,9 @@ body {
     padding-bottom: 1em;
 }
 
-.deleteButton .bt-adm m-1d-flex justify-content-center align-items-center{
-    padding: 0.1em;
+.adminButtons {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
 }
 
 .crimesList {
@@ -88,6 +89,8 @@ h6{
 
 .card-title-text-white{
     color: rgb(105, 105, 105);
+    font-size: smaller;
+    margin-bottom: 0px !important;
 }
 
 a {
