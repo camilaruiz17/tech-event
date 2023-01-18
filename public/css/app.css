@@ -16,6 +16,10 @@
     padding: 1em;
 }
 
+h1,h2,h3,h4,h5,p{
+    font-family: 'Bangers';
+}
+
 .cardHero {
     display: flex;
     background-color: rgba(204, 196, 194, 0.655) !important;

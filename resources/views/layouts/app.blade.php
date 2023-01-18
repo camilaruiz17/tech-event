@@ -31,9 +31,9 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style="border:solid black; background-color: rgba(154, 0, 0, 0.599)  !important;" >
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style="border:solid black; background-color: white  !important;" >
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}"> Not Today! 
+                <a class="navbar-brand" href="{{ url('/') }}"><img src="/imgLogue/logoNotToday.jpg" alt="">
                     <!--{{ config('app.name', 'Laravel') }}-->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

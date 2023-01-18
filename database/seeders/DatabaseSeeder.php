@@ -27,35 +27,35 @@ class DatabaseSeeder extends Seeder
             'alertName' => 'Thanos attacks Madrid',
             'description' => 'Thanos attacks Madrid...',
             'heroesRequired' => 10,
-            'img' => '/imgSlider/thanosAttacksMadrid.jpg',
+            'img' => '/imgCrimes/thanosMadrid.jpg',
             'datetime'=> '2023-02-20 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Venom attacks Jersey',
             'description' => 'Venom attacks Jersey...',
             'heroesRequired' => 8,
-            'img' => '/imgSlider/venomAttacksJersey.jpg',
+            'img' => '/imgCrimes/venomJersey.jpg',
             'datetime'=> '2023-02-22 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Green Goblin attacks London',
             'description' => 'Green Goblin attacks London...',
             'heroesRequired' => 9,
-            'img' => '/imgSlider/greenGobblinAttacksLondon.jpg',
+            'img' => '/imgCrimes/goblinLondon.jpg',
             'datetime'=> '2023-01-31 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Mysterio attacks New York',
             'description' => 'Mysterio attacks New York...',
             'heroesRequired' => 10,
-            'img' => '/imgSlider/mysterioAttacksNewYork.jpg',
+            'img' => '/imgCrimes/mysterioNewYork.jpg',
             'datetime'=> '2023-01-23 14:00:00',
         ]);
         Crime::factory()->create([
             'alertName' => 'Loki attacks The Planet',
             'description' => 'Loki attacks The Planet...',
             'heroesRequired' => 20,
-            'img' => '/imgStrokeOvercome/lokiOvercome.jpg',
+            'img' => '/imgCrimes/lokiThePlanet.jpg',
             'datetime'=> '2023-01-08 14:00:00',
         ]);
     
