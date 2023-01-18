@@ -4,9 +4,18 @@
 
 }
 
-.buttonNewCrime{
+body {
+  background-color: rgba(204, 196, 194, 0.655) !important;
+}
+
+.buttonNewCrime {
     display: flex;
     justify-content: center;
+    padding-bottom: 1em;
+}
+
+.deleteButton .bt-adm m-1d-flex justify-content-center align-items-center{
+    padding: 0.1em;
 }
 
 .crimesList {
@@ -18,15 +27,18 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-h1,h2,h3,h4,h5,p{
+h1,h2,h3,h4,h5,h6,p{
     font-family: 'Bangers';
 }
 
 .cardHero {
-    display: flex;
-    background-color: rgba(204, 196, 194, 0.655) !important;
-    margin: 0.5em;
-    width: 90%;
+  display: flex;
+  background-color: white !important;
+  border: solid black 2px;
+  margin: 0.5em;
+  padding: 0.4em;
+  width: 90%;
+  height: 9em;
 }
 
 @media (min-width: 700px) {
@@ -38,15 +50,32 @@ h1,h2,h3,h4,h5,p{
 .cardImg {
     width: 100%;
     height: 100%;
+    max-width: 170px;
+}
+
+h5{
+  font-size: 1.25em !important;
+}
+
+h6{
+  font-size: 0.9em !important;
 }
 
 .cardBody {
     margin: 0.25em;
+    font-size: smaller;
+    max-height: 5em;
 }
 
-/*body {
-    background-color: rgba(202, 190, 185, 0.808);
-}*/
+.text {
+  max-height: 8em;
+  font-size: smaller;
+}
+
+.text-warning .cardBody {
+  display: flex;
+  align-items: flex-end;
+}
 
 .card-title-text-primary {
     color: rgba(154, 0, 0, 0.599) ;
@@ -84,18 +113,9 @@ footer {
 }
 
 .slider {
-    background-color: #F2F2F2;
+    padding: 40px 40px;
 }
 
-body {
-    background-color: black;
-}
-
-
-.slider {
-    background-color: #f2f2f2;
-    padding: 40px 0;
-}
 .slider__container {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -122,7 +142,8 @@ body {
   }
   
   .slider__texts {
-    max-width: 600px;
+    max-width: 350px;
+    max-height: 300px;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 30px;
     padding: 30px;
@@ -145,11 +166,12 @@ body {
   
   .slider__img {
     width: 230px;
-    height: 230px;
+    height: 230px; 
     border-radius: 50%;
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    /* height: fit-content !important; */
   }
   
   .slider__arrow {
@@ -160,19 +182,23 @@ body {
   .slider__arrow:nth-of-type(2) {
     justify-self: end;
   }
-  @media (max-width: 768px) {
+
+  @media (max-width: 390px) {
     .slider__body {
       grid-template-columns: 1fr;
       grid-template-rows: max-content 1fr;
       text-align: center;
     }
+
     .slider__picture {
       grid-row: 1/2;
     }
+
     .slider__img {
       width: 210px;
       height: 210px;
     }
+        
     .about {
       max-width: 90%;
     }
