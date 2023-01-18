@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="containerCreate">
+<div class="containerCreate">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -30,7 +30,7 @@
                             <input type="text" name="datetime" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Date Time">
                         </div>
 
-                         <div class="btnContainer">
+                        <div class="btnContainer">
                             <div class="btnBack">
                                 <button class="cancelBtn"><a href="{{ route('home') }}">BACK</a></button>
                             </div>
@@ -44,6 +44,6 @@
             </div>
         </div>
     </div>
-  </div>  
+</div>  
 
 @endsection

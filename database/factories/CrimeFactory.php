@@ -22,7 +22,7 @@ class CrimeFactory extends Factory
             'heroesRequired' => $this->faker->biasedNumberBetween($min = 1, $max = 20),
             'img' => $this->faker->imageUrl(),
             'datetime' => $this->faker->dateTime(),
-            'important' => $this->faker->biasedNumberBetween($min = 0, $max = 1),
+            // 'important' => $this->faker->biasedNumberBetween($min = 0, $max = 1),
         ];
     }
 }

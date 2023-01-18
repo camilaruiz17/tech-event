@@ -14,7 +14,6 @@ class Crime extends Model
         'heroesRequired',
         'img',
         'datetime',
-        'important',
     ];
 
     public function user(){
