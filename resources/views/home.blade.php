@@ -3,7 +3,7 @@
 @section('content')
     @if(Auth::check() && Auth::user()->isAdmin)
         <div class="buttonNewCrime">
-            <button class="btn btn-primary" style="background-color: black !important ; ">
+            <button class="btn btn-primary" style="background-color: black !important; border: solid 1px black !important;">
                 <a href="{{ route('createCrime') }}">
                     <div class="text-warning2"style="color:white !important;" >CREATE NEW ALERT</div>
                 </a>
@@ -50,15 +50,15 @@
                         @method('delete')
                         @csrf
                         @if(Auth::check() && Auth::user()->isAdmin)
-
-                        <a type="submit"
-                        class="deleteButton" style="padding: 0px !important;"
-                        onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">
-                        🗑️
-                        </a>
-                        <a class="bt-adm m-1d-flex justify-content-center align-items-center" 
+                        <button>
+                            <a type="submit"
+                            class="deleteButton" style="padding: 0px !important;"
+                            onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">🗑️</a>
+                        </button>
+                        <button>
+                            <a class="bt-adm m-1d-flex justify-content-center align-items-center" 
                                 href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a>
-                        
+                        </button>
                         @endif        
                     </form>
                     <div>

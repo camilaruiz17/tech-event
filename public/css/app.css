@@ -20,7 +20,7 @@ body {
     font-family: 'Bangers';
     font-size: 12px;
     background-color: black;
-    border: solid 1px black;
+    border: solid 1px black !important;
     height: 30px;
     width: 80px;
 }

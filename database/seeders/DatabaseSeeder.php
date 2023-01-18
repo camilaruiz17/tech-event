@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
     
     
 
-        Crime::factory(16)->create();
+        Crime::factory(6)->create();
 
         User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com', 
         'isAdmin' => true]);
