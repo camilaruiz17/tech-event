@@ -93,17 +93,17 @@
 
     
         <footer>
-            <div></div>
             
-
-                <p>All rights reserved © </p>
+            <div class="allRightsReserved">
+                <p>All rights reserved© </p>
+            </div>
 
                 <div class="socialMedia">
                     <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-instagram"
-                width="44"
-                height="44"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"
@@ -119,8 +119,8 @@
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-facebook"
-                width="44"
-                height="44"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"
@@ -136,8 +136,8 @@
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-twitter"
-                width="44"
-                height="44"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"
@@ -153,8 +153,8 @@
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-tiktok"
-                width="44"
-                height="44"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"
@@ -168,8 +168,8 @@
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-youtube"
-                width="44"
-                height="44"
+                width="30"
+                height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="black"

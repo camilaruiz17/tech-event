@@ -5,7 +5,7 @@
         <div class="buttonNewCrime">
             <button class="btn btn-primary" style="background-color: black !important ; ">
                 <a href="{{ route('createCrime') }}">
-                    <div class="text-warning"style="color:white !important;" >CREATE NEW ALERT</div>
+                    <div class="text-warning2"style="color:white !important;" >CREATE NEW ALERT</div>
                 </a>
             </button>
         </div>
@@ -55,13 +55,14 @@
                         onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">
                         🚮
                         </button>
+
                         <a class="bt-adm m-1d-flex justify-content-center align-items-center" 
                                 href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a> 
                         @endif        
                     </form>
                     <div>
-                        <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Inscribe</a></button>
-                        <button class="text-warning" onclick="return confirm('Are you sure to unsubscribe this crime? {{ $crime->alertName}} - ID {{$crime->id }}')"><a href="{{route('unscribe', $crime->id)}}">Unsubscribe</a></button>
+                        <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">INSCRIBE</a></button>
+                        <button class="text-warning1" onclick="return confirm('Are you sure to unsubscribe this crime? {{ $crime->alertName}} - ID {{$crime->id }}')"><a href="{{route('unscribe', $crime->id)}}">UNSUBSCRIBE</a></button>
                     </div>
                 </div>
             

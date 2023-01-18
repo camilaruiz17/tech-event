@@ -45,20 +45,17 @@ a {
     background-color: #13eed4;
     color: black;
     display: block;
-    font-weight: bold;
     text-decoration: none;
     height: 39px;
     width: 79px;
 }
 
-.cancelBtn:hover {
-    color: black;
-}
 
 .editBtn {
-    font-weight: bold;
-    background-color: #0ef125;
-    border: solid 1px #0ef125;
+    font-family: 'Bangers';
+    font-size: 20px;
+    background-color: #16a422;
+    border: solid 1px #16a422;
     height: 39px;
     width: 79px;
 }
