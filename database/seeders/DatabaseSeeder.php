@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Crime::factory()->create([
-            'alertName' => 'Thanos attacks Madrid',
+            'alertName' => 'Thanos attacks Madrid...Important!',
             'description' => 'Thanos attacks Madrid...',
             'heroesRequired' => 10,
             'img' => '/imgCrimes/thanosMadrid.jpg',
