@@ -33,16 +33,17 @@
 
 .btnBack {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .cancelBtn {
-    display: block;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
     background-color: #13eed4;
+    color: black;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    /*  margin: 0; */
     height: 39px;
     width: 79px;
 }
