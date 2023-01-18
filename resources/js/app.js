@@ -1,13 +1,14 @@
 import './bootstrap';
-
 (function(){
-    const sliders=[...document.querySelectorAll('.slider__body')];
+    const sliders= [...document.querySelectorAll('.slider__body')];
     sliders[0].classList.toggle('slider__body--show');
     const arrowNext= document.querySelector('#after');
     const arrowBefore= document.querySelector('#before');
-    let value;
+    let value; 
+
     arrowNext.addEventListener('click', ()=>changePosition(1));
     arrowBefore.addEventListener('click', ()=>changePosition(-1));
+
     function changePosition(change){
         const currentElement= Number(document.querySelector('.slider__body--show').dataset.id);
         value=currentElement;

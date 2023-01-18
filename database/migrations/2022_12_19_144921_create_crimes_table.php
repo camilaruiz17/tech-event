@@ -21,8 +21,6 @@ return new class extends Migration
             $table->integer('heroesRequired');
             $table->string('img');
             $table->dateTime('datetime');
-            $table->integer('important')->nullable();
-
             $table->timestamps();
         });
     }
