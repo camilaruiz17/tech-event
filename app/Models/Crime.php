@@ -14,6 +14,5 @@ class Crime extends Model
         'heroesRequired',
         'img',
         'datetime',
-        'important',
     ];
 }

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Crime;
-use App\Models\UserEvents;
 use Illuminate\Http\Request;
 
 class CrimeController extends Controller
@@ -61,30 +60,6 @@ class CrimeController extends Controller
         $crime = Crime::find($id);
 
         return view ('showCrime', compact('crime'));
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function eventos($id)
-    {
-        //f
-        $userEvents = UserEvents::cursor()->filter(function ($event) use ($id) {
-            return $event->user_id == $id && $event->status == 1;
-        });
-
-        var_dump($userEvents);
-
-        $crime = null;
-
-        foreach ($userEvents as $event) {
-            $crime = Crime::find($event->id);
-        }
-
-        return view ('userEvents', compact('crime', 'userEvents'));
     }
 
     /**

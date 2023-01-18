@@ -61,9 +61,6 @@
                         <a class="nav-link" href="{{ route('createCrime') }}">
                             Create new Alert
                         </a>
-                        <a class="nav-link" href="{{ route('userEvents', Auth::user()->id) }}" role="button">
-                            User Events
-                        </a>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
