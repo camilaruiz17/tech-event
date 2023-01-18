@@ -17,8 +17,8 @@
             <section class="slider__body" data-id="{{ $importantCrime->id }}" style="background-image: url('{{$importantCrime->img}}')">
                 <div class="slider__texts">
                 <h2 class="subtitle" >{{ $importantCrime->alertName }}</h2>
-                <h4>{{date_format(date_create($importantCrime->datetime),"Y/m/d H:i:s");}}</h4>
-                <h5>We need {{$importantCrime->heroesRequired}} heroes!</h5>
+                <h4 class="event__date">{{date_format(date_create($importantCrime->datetime),"Y/m/d H:i:s");}}</h4>
+                <h5 class="heroes__count">We need {{$importantCrime->heroesRequired}} heroes!</h5>
                 
                 </div>
                 <figure class="slider__picture">
@@ -46,18 +46,19 @@
                         <h6>Stroke Overcome</h6>
                     @endif
                     
-                    <form action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
+                    <form class="adminButtons" action="{{ route('deleteCrime',['id' =>$crime->id])}}" method="post">
                         @method('delete')
                         @csrf
                         @if(Auth::check() && Auth::user()->isAdmin)
-                        <button type="submit"
+
+                        <a type="submit"
                         class="deleteButton" style="padding: 0px !important;"
                         onclick="return confirm('Are you sure to delete this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">
-                        🚮
-                        </button>
-
+                        🗑️
+                        </a>
                         <a class="bt-adm m-1d-flex justify-content-center align-items-center" 
-                                href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a> 
+                                href="{{ route('editCrime', ['id' => $crime->id]) }}" onclick="return confirm('Are you sure to edit this crime? {{ $crime->alertName}} - ID {{$crime->id }}')">✏️</a>
+                        
                         @endif        
                     </form>
                     <div>
