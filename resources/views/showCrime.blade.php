@@ -17,15 +17,15 @@
                     <div class="float-right">
                         <a class="btn btn-primary" href=" {{ route('home') }}">Home</a>
                             @if (strtotime(date("Y-m-d H:i:00",time())) > strtotime($crime->datetime))
-                                <h5>Evento ya paso</h5>
+                                <h5>Stroke Overcome</h5>
                             @else
                                 <!-- <button type="button" class="btn btn-primary">Check in</button>
                                 <button type="button" class="btn btn-primary">Sign out</button> -->
-                                <div></div>
+                                <div>
                                     <button class="text-warning"><a href="{{route('inscribe', $crime->id)}}">Register</a></button>
                                     <button class="text-warning"><a href="{{route('unscribe', $crime->id)}}">Unregister</a></button>
                                 </div>
-                                @endif
+                            @endif
                     </div>
                     <a class="cancelBtn" href=" {{ route('home') }}"> BACK </a>
                 </div>

@@ -2,7 +2,7 @@
 
 @section('content')
     @if(Auth::check() && Auth::user()->isAdmin)
-        <div>
+        <div class="buttonNewCrime">
             <button class="btn btn-primary">
                 <a href="{{ route('createCrime') }}">
                     <div class="text-warning">CREATE NEW ALERT</div>
