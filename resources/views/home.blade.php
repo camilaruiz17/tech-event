@@ -11,16 +11,17 @@
     <section class="slider">
         <div class="slider__container container">
           <img src="./imgslider/leftarrow.svg" class="slider__arrow" id="before">
-          @foreach ($important as $importantCrime)
-            <section class="slider__body" data-id="{{ $importantCrime->id }}">
+          @foreach ($crimesOnSlider as $importantCrime)
+            <section class="slider__body" data-id="{{ $importantCrime->id }}" style="background-image: url('{{$importantCrime->img}}')">
                 <div class="slider__texts">
                 <h2 class="subtitle" >{{ $importantCrime->alertName }}</h2>
+                <h4>{{date_format(date_create($importantCrime->datetime),"Y/m/d H:i:s");}}</h4>
+                <h5>We need {{$importantCrime->heroesRequired}} heroes!</h5>
                 <p class="slider__review">
                     {{ $importantCrime->description }}
                 </p>
                 </div>
                 <figure class="slider__picture">
-                <img src="{{ $importantCrime->img }}" class="slider__img">
                 </figure>
             </section>
         @endforeach

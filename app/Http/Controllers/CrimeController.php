@@ -17,11 +17,11 @@ class CrimeController extends Controller
     {
         //
         $crimes = Crime::paginate(5);
-        $important = Crime::cursor()->filter(function ($crime) {
-            return $crime->important > 0;
+        $crimesOnSlider = Crime::cursor()->filter(function ($crime) {
+            return str_contains(strtolower($crime->alertName), 'important');
         });
 
-        return view('home', compact('crimes', 'important'));
+        return view('home', compact('crimes', 'crimesOnSlider'));
     }
 
     /**
