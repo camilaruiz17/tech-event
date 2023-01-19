@@ -62,7 +62,7 @@
 
 <h2>6. Atomic Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211408557-c19d3cde-1f5c-4fe6-887f-5bcac3fcd960.png" alt="Atomic Design"/>
+<img style="width:250px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213406315-f64eec51-42c3-4ee7-b5a4-4fe785958981.png" alt="Atomic Design"/>
 </div>
 
 <h2>7. Final Design</h2> 
