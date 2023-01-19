@@ -66,8 +66,9 @@
 
 <h2>7. Final Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213318321-05327f9a-2b06-4982-918b-274d17add793.png" alt="PFinal Design "/>
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213384097-3328c830-84df-4415-9eec-ddc64e57f65f.png" alt="PFinal Design "/>
 </div>
+
 
 <h2>8. Stacks</h2>
 <ul>
