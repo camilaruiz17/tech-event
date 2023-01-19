@@ -109,11 +109,11 @@
 <h3>Warning & Testing</h3>
 <ol>
 <li><b>Important</b>: If we then need to run more commands in the IDE, we'll open a third terminal without closing the previous two.</li>
-<li><b>Test</b>: Run in the IDE <b>php artisan test</b> & <b>vendor/bin/phpunit</b> where it should return the following result:<b> 5 passed</b></li>
+<li><b>Test</b>: Run in the IDE <b>php artisan test</b> & <b>vendor/bin/phpunit</b> where it should return the following result:<b> 5 passed</b> and <b> OK (5 test, 14 assertions)</b></li>
 </ol>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:400px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213317455-0f726d16-4014-4065-9165-f553dffa3aa6.png" alt="finalTest"/>
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213317455-0f726d16-4014-4065-9165-f553dffa3aa6.png" alt="finalTest"/>
 </div>
 
 <h2>10. Methodology:</h2>
