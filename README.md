@@ -51,8 +51,9 @@
 
 <h2>4. Project Demo (Preview)</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:200px; height:450px; margin:12px" src="https://user-images.githubusercontent.com/116546588/211418361-0dc2cbc4-db75-41a0-84c8-a57e3c666cc8.png" alt="Preliminary project demo"/>
+<img style="width:450px; height:300px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
 </div>
+
 
 <h2>5. Initial Sketch</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
@@ -66,9 +67,8 @@
 
 <h2>7. Final Design</h2> 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213384097-3328c830-84df-4415-9eec-ddc64e57f65f.png" alt="PFinal Design "/>
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213404594-4e2ce34a-6da1-498d-9cc9-5fa599af9ccc.png" alt="PFinal Design "/>
 </div>
-
 
 <h2>8. Stacks</h2>
 <ul>
