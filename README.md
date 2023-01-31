@@ -51,7 +51,7 @@
 
 <h2>4. Project Demo</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<video src="https://user-images.githubusercontent.com/116546588/215846152-6bed9758-cfdf-4e63-a97a-6400d2c9f3fc.mp4" width="420" height="240" controls></video>
+<video src="https://user-images.githubusercontent.com/116546588/215846152-6bed9758-cfdf-4e63-a97a-6400d2c9f3fc.mp4" width="440" height="280" controls></video>
 </div>
 
 <h2>5. Initial Sketch</h2>
