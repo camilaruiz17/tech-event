@@ -113,7 +113,7 @@
 </ol>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213317455-0f726d16-4014-4065-9165-f553dffa3aa6.png" alt="finalTest"/>
+<img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/215830259-64fddeca-d2f8-481e-9eb5-30d82d953a07.png" alt="finalTest"/>
 </div>
 
 <h2>10. Methodology:</h2>
