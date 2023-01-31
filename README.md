@@ -49,11 +49,10 @@
 </ul>
 
 
-<h2>4. Project Demo (Preview)</h2>
+<h2>4. Project Demo</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
-<img style="width:400px; height:250px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213402788-585bfa53-121f-42ac-8058-15d968106c40.gif" alt="Preliminary project demo"/>
+<video src="https://user-images.githubusercontent.com/116546588/215846152-6bed9758-cfdf-4e63-a97a-6400d2c9f3fc.mp4" width="420" height="240" controls></video>
 </div>
-
 
 <h2>5. Initial Sketch</h2>
 <div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
@@ -66,7 +65,7 @@
 </div>
 
 <h2>7. Final Design</h2> 
-<div style="display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
+<div style="heigth:400px;  display:flex; flex-wrap:wrap; justify-content:center; margin:auto">
 <img style="width:600px; height:500px; margin:12px" src="https://user-images.githubusercontent.com/116546588/213404594-4e2ce34a-6da1-498d-9cc9-5fa599af9ccc.png" alt="PFinal Design "/>
 </div>
 
